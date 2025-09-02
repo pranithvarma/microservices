@@ -8,7 +8,6 @@ import lombok.*;
 
 @Entity
 @Getter@Setter@ToString@NoArgsConstructor@AllArgsConstructor
-
 public class Accounts extends BaseEntity {
     private Long customerId;
     @Id
