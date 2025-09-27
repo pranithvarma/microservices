@@ -13,7 +13,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="configserver" />
       </profile>
-      <profile name="Annotation profile for accounts" enabled="true">
+      <profile name="Annotation profile for loans" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -21,8 +21,8 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
         <module name="loans" />
-        <module name="accounts" />
         <module name="cards" />
+        <module name="accounts" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17" />
@@ -31,7 +31,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="accounts" options="-parameters" />
       <module name="cards" options="-parameters" />
-      <module name="configserver" options="-parameters" />
+      <module name="configserver" options="" />
       <module name="loans" options="-parameters" />
     </option>
   </component>

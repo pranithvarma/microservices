@@ -246,7 +246,4 @@ public class AccountsController {
                 .body(accountsContactInfoDto);
     }
 
-
-
-
 }
