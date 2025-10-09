@@ -2,6 +2,7 @@ C:\Users\kpran\Downloads\microservices\loans\src\main\java\com\eazybytes\loans\a
 C:\Users\kpran\Downloads\microservices\loans\src\main\java\com\eazybytes\loans\constants\LoansConstants.java
 C:\Users\kpran\Downloads\microservices\loans\src\main\java\com\eazybytes\loans\controller\LoansController.java
 C:\Users\kpran\Downloads\microservices\loans\src\main\java\com\eazybytes\loans\dto\ErrorResponseDto.java
+C:\Users\kpran\Downloads\microservices\loans\src\main\java\com\eazybytes\loans\dto\LoansContactInfoDto.java
 C:\Users\kpran\Downloads\microservices\loans\src\main\java\com\eazybytes\loans\dto\LoansDto.java
 C:\Users\kpran\Downloads\microservices\loans\src\main\java\com\eazybytes\loans\dto\ResponseDto.java
 C:\Users\kpran\Downloads\microservices\loans\src\main\java\com\eazybytes\loans\entity\BaseEntity.java
