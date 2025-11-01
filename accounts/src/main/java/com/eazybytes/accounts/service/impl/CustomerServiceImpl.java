@@ -53,8 +53,15 @@ public class CustomerServiceImpl implements ICustomerService {
         CompletableFuture.allOf(cardsFuture, loansFuture).join();
 
         // Set results
-        customerDetailsDto.setCardsDto(cardsFuture.join().getBody());
-        customerDetailsDto.setLoansDto(loansFuture.join().getBody());
+        ResponseEntity<CardsDto> cardsResponse = cardsFuture.join();
+        if (cardsResponse != null && cardsResponse.getBody() != null) {
+            customerDetailsDto.setCardsDto(cardsResponse.getBody());
+        }
+
+        ResponseEntity<LoansDto> loansResponse = loansFuture.join();
+        if (loansResponse != null && loansResponse.getBody() != null) {
+            customerDetailsDto.setLoansDto(loansResponse.getBody());
+        }
 
         return customerDetailsDto;
     }
