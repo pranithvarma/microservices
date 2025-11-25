@@ -1,5 +1,7 @@
 package com.eazybytes.cards.dto;
 
+import com.eazybytes.cards.audit.MyMaskingSerializer;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
@@ -25,6 +27,7 @@ public class CardsDto {
     @Schema(
             description = "Card Number of the customer", example = "100646930341"
     )
+    @JsonSerialize(using = MyMaskingSerializer.class)
     private String cardNumber;
 
     @NotEmpty(message = "CardType can not be a null or empty")

@@ -1,5 +1,7 @@
 package com.eazybytes.accounts.dto;
 
+import com.eazybytes.accounts.audit.MyMaskingSerializer;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
@@ -17,6 +19,7 @@ public class AccountsDto {
     @Schema(
             description = "Account Number of Eazy Bank account", example = "3454433243"
     )
+    @JsonSerialize(using = MyMaskingSerializer.class)
     private Long accountNumber;
 
     @NotEmpty(message = "AccountType can not be a null or empty")
